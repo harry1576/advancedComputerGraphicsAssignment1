@@ -1,0 +1,3 @@
+/home/harry/Desktop/COSC422/Assignment/Part 1/CMakeFiles/rebuild_cache.dir
+/home/harry/Desktop/COSC422/Assignment/Part 1/CMakeFiles/CubePatches.out.dir
+/home/harry/Desktop/COSC422/Assignment/Part 1/CMakeFiles/edit_cache.dir

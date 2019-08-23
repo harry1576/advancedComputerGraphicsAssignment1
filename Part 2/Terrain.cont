@@ -1,0 +1,64 @@
+#version 400
+
+layout(vertices = 4) out;
+uniform vec4 camVector;
+
+float clevel ;
+float llevel ;
+float blevel ;
+float rlevel ;
+float ulevel ;
+
+int distanceMin;
+int distanceMax ;
+int Lhigh;
+int Llow ;
+
+
+void main()
+{
+    distanceMin = 50;
+    distanceMax = 100;
+    
+    Lhigh = 25;
+    Llow = 2;
+    
+
+    vec4 left = (gl_in[0].gl_Position + gl_in[1].gl_Position )/2;
+    vec4 bottom = (gl_in[1].gl_Position + gl_in[2].gl_Position)/2;
+    vec4 right = (gl_in[2].gl_Position + gl_in[3].gl_Position)/2;
+    vec4 up = (gl_in[3].gl_Position + gl_in[0].gl_Position)/2;
+    vec4 centre = (gl_in[0].gl_Position + gl_in[1].gl_Position + gl_in[2].gl_Position + gl_in[3].gl_Position )/4;
+
+    float cdist = distance(camVector,centre);
+    float ldist = distance(camVector,left);
+    float bdist = distance(camVector,bottom);
+    float rdist = distance(camVector,right);
+    float udist = distance(camVector,up);
+    
+    clevel = ((cdist - distanceMin)/(distanceMax - distanceMin) * (Llow - Lhigh) + Lhigh);
+    if(clevel < 2){clevel = 2;}
+
+    llevel = ((ldist - distanceMin)/(distanceMax - distanceMin) * (Llow - Lhigh) + Lhigh);
+    if(llevel < 2){llevel = 2;}
+
+    blevel = ((bdist - distanceMin)/(distanceMax - distanceMin) * (Llow - Lhigh) + Lhigh); 
+    if(blevel < 2){blevel = 2;}
+
+    rlevel = ((rdist - distanceMin)/(distanceMax - distanceMin) * (Llow - Lhigh) + Lhigh); 
+    if(rlevel < 2){rlevel = 2;}
+   
+    ulevel = ((udist - distanceMin)/(distanceMax - distanceMin) * (Llow - Lhigh) + Lhigh);
+    if(ulevel < 2){ulevel = 2;}
+
+    gl_out[gl_InvocationID].gl_Position = gl_in[gl_InvocationID].gl_Position;
+    gl_TessLevelOuter[0] = ulevel;
+    gl_TessLevelOuter[1] = llevel;
+    gl_TessLevelOuter[2] = blevel;
+    gl_TessLevelOuter[3] = rlevel;
+    gl_TessLevelInner[0] = clevel;
+    gl_TessLevelInner[1] = clevel;
+
+
+
+}

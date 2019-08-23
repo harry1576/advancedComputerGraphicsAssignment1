@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/harry/Desktop/COSC422/Assignment/Part 1/CubePatches.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+GL/glew.h
+-
+GL/freeglut.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+CubePatches.h
+/home/harry/Desktop/COSC422/Assignment/Part 1/CubePatches.h
+math.h
+-
+
+/home/harry/Desktop/COSC422/Assignment/Part 1/CubePatches.h
+
