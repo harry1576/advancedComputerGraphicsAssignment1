@@ -1,0 +1,3 @@
+/home/harry/Desktop/Advanced-Computer-Graphics-Assignment-1/Part-1/CMakeFiles/rebuild_cache.dir
+/home/harry/Desktop/Advanced-Computer-Graphics-Assignment-1/Part-1/CMakeFiles/edit_cache.dir
+/home/harry/Desktop/Advanced-Computer-Graphics-Assignment-1/Part-1/CMakeFiles/CubePatches.out.dir
