@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CubePatches.out.dir/CubePatches.cpp.o"
-  "CubePatches.out.pdb"
   "CubePatches.out"
+  "CubePatches.out.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

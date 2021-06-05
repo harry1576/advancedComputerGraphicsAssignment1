@@ -1,1 +1,1 @@
-/usr/bin/g++    -rdynamic CMakeFiles/CubePatches.out.dir/CubePatches.cpp.o  -o CubePatches.out -lGL -lGLU -lglut -lXi -lGLEW 
+/usr/bin/c++    -rdynamic CMakeFiles/CubePatches.out.dir/CubePatches.cpp.o  -o CubePatches.out  -lGL -lGLU -lglut -lGLEW 

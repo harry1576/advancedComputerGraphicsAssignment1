@@ -11,6 +11,8 @@ vec4 explosionDirection = vec4(0,0,0,0);
 double vy = 0;
 double vh = 0;
 
+vec4 zero = vec4(0,0,0,0);
+
 int distanceMin;
 int distanceMax ;
 int Lhigh;
@@ -38,8 +40,6 @@ void main()
     tesselationLevel = ((distance - distanceMin)/(distanceMax - distanceMin) * (Llow - Lhigh) + Lhigh);
 
 
-
-
     gl_TessLevelOuter[0] = tesselationLevel;
     gl_TessLevelOuter[1] = tesselationLevel;
     gl_TessLevelOuter[2] = tesselationLevel;
@@ -55,12 +55,15 @@ void main()
     
     delta = vec4(explosionDirection.x * time  * 100, (100 *  explosionDirection.y * time) -  (time * time), 100 * explosionDirection.z * time ,0) * 0.01 ;
         
-
-
-
-    if(gl_in[0].gl_Position.y + delta.y >= 0 && gl_in[1].gl_Position.y + delta.y >= 0 && gl_in[2].gl_Position.y + delta.y >= 0 && gl_in[3].gl_Position.y + delta.y >= 0 && gl_in[4].gl_Position.y + delta.y >= 0 && gl_in[5].gl_Position.y  + delta.y >= 0 && gl_in[6].gl_Position.y + delta.y >= 0 && gl_in[7].gl_Position.y + delta.y >= 0 && gl_in[8].gl_Position.y + delta.y >= 0 && gl_in[9].gl_Position.y + delta.y >= 0 && gl_in[10].gl_Position.y + delta.y >= 0 && gl_in[11].gl_Position.y + delta.y >= 0 && gl_in[12].gl_Position.y + delta.y >= 0 && gl_in[13].gl_Position.y + delta.y >= 0  && gl_in[14].gl_Position.y + delta.y >= 0 && gl_in[15].gl_Position.y + delta.y >= 0)
+    
+    if(fragCentre.y + delta.y > 0)
     {
-      gl_out[gl_InvocationID].gl_Position =  gl_in[gl_InvocationID].gl_Position + delta;
+        gl_out[gl_InvocationID].gl_Position =  gl_in[gl_InvocationID].gl_Position + delta;
+    }
+    else
+    {
+        gl_out[gl_InvocationID].gl_Position =  zero;
+
     }
 
 

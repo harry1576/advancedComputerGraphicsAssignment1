@@ -1,4 +1,4 @@
-# Install script for directory: /home/harry/Desktop/COSC422/Assignment/Part 1
+# Install script for directory: /home/harry/Desktop/Advanced-Computer-Graphics-Assignment-1/Part 1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/harry/Desktop/COSC422/Assignment/Part 1/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/harry/Desktop/Advanced-Computer-Graphics-Assignment-1/Part 1/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

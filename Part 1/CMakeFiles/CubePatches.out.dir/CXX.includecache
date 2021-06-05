@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/harry/Desktop/COSC422/Assignment/Part 1/CubePatches.cpp
+/home/harry/Desktop/Advanced-Computer-Graphics-Assignment-1/Part 1/CubePatches.cpp
 iostream
 -
 fstream
@@ -22,9 +22,9 @@ glm/glm.hpp
 glm/gtc/matrix_transform.hpp
 -
 CubePatches.h
-/home/harry/Desktop/COSC422/Assignment/Part 1/CubePatches.h
+/home/harry/Desktop/Advanced-Computer-Graphics-Assignment-1/Part 1/CubePatches.h
 math.h
 -
 
-/home/harry/Desktop/COSC422/Assignment/Part 1/CubePatches.h
+/home/harry/Desktop/Advanced-Computer-Graphics-Assignment-1/Part 1/CubePatches.h
 

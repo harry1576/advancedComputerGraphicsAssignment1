@@ -73,7 +73,7 @@ void update(int value)
     //angle++;
     if(explode == 1){
         timepassed ++;
-        //glDisable(GL_CULL_FACE);
+        glDisable(GL_CULL_FACE);
 
     }
 
@@ -116,9 +116,6 @@ void initialise()
 		fprintf(stderr, "Linker failure: %s\n", strInfoLog);
 		delete[] strInfoLog;
     }
-
-
-
 
 
     glGenVertexArrays(1, &vaoID);
