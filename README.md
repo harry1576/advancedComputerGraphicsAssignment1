@@ -21,7 +21,7 @@ adjustable snow and water levels.
 
 ![scene](/images/terrain.png) 
 
-#Controls 
+# Controls 
 ## For Both Scenes:
 Key | Description
 ------------ | -------------
