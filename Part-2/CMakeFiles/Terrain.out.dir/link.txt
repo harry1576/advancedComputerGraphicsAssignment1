@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Terrain.out.dir/Terrain.cpp.o  -o Terrain.out  -lGL -lGLU -lglut -lGLEW 

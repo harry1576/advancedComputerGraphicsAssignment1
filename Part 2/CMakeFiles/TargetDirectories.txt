@@ -1,3 +1,0 @@
-/home/harry/Desktop/COSC422/Assignment/Part 2/CMakeFiles/rebuild_cache.dir
-/home/harry/Desktop/COSC422/Assignment/Part 2/CMakeFiles/Terrain.out.dir
-/home/harry/Desktop/COSC422/Assignment/Part 2/CMakeFiles/edit_cache.dir
