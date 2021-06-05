@@ -51,5 +51,6 @@ Run the following command to build the program:\
 ```cmake .``` \
 ```make``` \
 Then to run the program:\
-```./RayTracer.o``` 
+```./x.out``` 
+Where x is the out name 
 
