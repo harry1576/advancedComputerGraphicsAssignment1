@@ -8,7 +8,7 @@ different tesselation level. The tesselation level is lower when you are further
 model, and increases as you get closer. The model is able to play an animation sequence which
 explodes the bezier surface model.
 
-![scene](/images/raytracer.png) 
+![scene](/images/bezier.png) 
   
 ## Terain Surface Modelling
 I implemented a terrain mapping program that allows the user to
@@ -18,6 +18,8 @@ to the terrain. The terrain is rendered with ambient and diffuse lighting. Four 
 included in this terrain (Water, Grass , Rock and Snow) . Additionally this program prevents
 cracking that can occur between different tesselation levels. This program also includes
 adjustable snow and water levels.
+
+![scene](/images/terrain.png) 
 
 #Controls 
 ## For Both Scenes:
